@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="Menu">
+        <div id="starting">
+            <h1>Name: </h1>
+            <input type="text" id="name">
+        </div>
+    
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle btn-dark" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Levels
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <button class="dropdown-item" id="Easy" onclick="changelvl1()"> Easy</button>
+                <button class="dropdown-item" id="Advanced" onclick="changelvl2()"> Advanced</button>
+                <button class="dropdown-item" id="Extreme" onclick="changelvl3()"> Extreme</button>
+            </ul>
+        </div>
+        <div class="sub">
+            <button type="submit" class="btn btn-dark" onclick="startGame()">Start</button>
+        </div>
+    </div>
+    <div id="game">
+        <h2 id="outName"></h2>
+        <div id="time">
+            <label id="minutes">00</label>
+            <label id="colon">:</label>
+            <label id="seconds">00</label>
+        </div>
+        <h3 id="winm">YOU WON!</h3>
+        <table id="mytab1"></table>
+        <input type="button" value="Clear" id="refresh" class="btn btn-dark">
+        <br>
+        <input type="button" value="Restart" id="restart" class="btn btn-dark">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
